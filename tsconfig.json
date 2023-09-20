@@ -12,8 +12,9 @@
     "baseUrl": "src",
     "paths": {
       "@code/*": ["day3/*"]
-    }
+    },
+    "types": ["bun-types"]
   },
-  "include": ["./src/**/*"],
+  "include": ["./src/**/*", "./scripts/*"],
   "exclude": ["node_modules"]
 }
