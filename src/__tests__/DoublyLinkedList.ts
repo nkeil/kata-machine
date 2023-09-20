@@ -1,5 +1,5 @@
 import LinkedList from "@code/DoublyLinkedList";
-import { test_list } from "./helpers/listTest";
+import { test_list } from "./helpers/list";
 import { test } from "@jest/globals";
 
 test("DoublyLinkedList", function () {
