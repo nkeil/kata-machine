@@ -1,4 +1,5 @@
 import MyMap from "@code/Map";
+import { test, expect } from "@jest/globals";
 
 test("Map", function () {
   const map = new MyMap<string, number>();

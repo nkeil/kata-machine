@@ -1,4 +1,5 @@
 import two_crystal_balls from "@code/TwoCrystalBalls";
+import { test, expect } from "@jest/globals";
 
 test("two crystal balls", function () {
   let idx = Math.floor(Math.random() * 10000);

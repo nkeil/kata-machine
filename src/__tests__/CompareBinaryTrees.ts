@@ -1,5 +1,6 @@
 import compare from "@code/CompareBinaryTrees";
-import { tree, tree2 } from "./tree";
+import { tree, tree2 } from "./helpers/tree";
+import { test, expect } from "@jest/globals";
 
 test("Compare Binary Trees", function () {
   expect(compare(tree, tree)).toEqual(true);

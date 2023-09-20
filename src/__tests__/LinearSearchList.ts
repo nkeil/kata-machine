@@ -1,4 +1,5 @@
 import linear_fn from "@code/LinearSearchList";
+import { test, expect } from "@jest/globals";
 
 test("linear search array", function () {
   const foo = [1, 3, 4, 69, 71, 81, 90, 99, 420, 1337, 69420];

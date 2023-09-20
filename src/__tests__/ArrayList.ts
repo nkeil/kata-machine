@@ -1,5 +1,6 @@
 import ArrayList from "@code/ArrayList";
-import { test_list } from "./ListTest";
+import { test } from "@jest/globals";
+import { test_list } from "./helpers/listTest";
 
 test("array-list", function () {
   const list = new ArrayList<number>(3);

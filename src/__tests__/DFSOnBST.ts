@@ -1,5 +1,6 @@
 import dfs from "@code/DFSOnBST";
-import { tree } from "./tree";
+import { tree } from "./helpers/tree";
+import { test, expect } from "@jest/globals";
 
 test("DFS on BST", function () {
   expect(dfs(tree, 45)).toEqual(true);

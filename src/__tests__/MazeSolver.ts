@@ -1,4 +1,5 @@
 import maze_solver from "@code/MazeSolver";
+import { test, expect } from "@jest/globals";
 
 test("maze solver", function () {
   const maze = [

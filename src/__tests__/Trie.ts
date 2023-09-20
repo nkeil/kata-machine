@@ -1,4 +1,5 @@
 import Trie from "@code/Trie";
+import { test, expect } from "@jest/globals";
 
 test("Trie", function () {
   const trie = new Trie();

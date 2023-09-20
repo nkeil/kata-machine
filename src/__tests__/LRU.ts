@@ -1,4 +1,5 @@
 import LRU from "@code/LRU";
+import { test, expect } from "@jest/globals";
 
 test("LRU", function () {
   const lru = new LRU<string, number>(3) as ILRU<string, number>;
