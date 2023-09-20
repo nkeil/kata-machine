@@ -2,7 +2,7 @@ export default class ArrayList<T> {
   public length: number;
   // TODO: add members
 
-  constructor() {
+  constructor(length: number) {
     // TODO: implement
   }
 

@@ -2,7 +2,7 @@ export default class LRU<K, V> {
   private length: number;
   // TODO: add members
 
-  constructor() {
+  constructor(length: number) {
     // TODO: implement
   }
 
