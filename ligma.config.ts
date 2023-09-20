@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   dsa: [
     "DFSOnBST",
     "LRU",
@@ -24,5 +24,5 @@ module.exports = {
     "BFSGraphMatrix",
     "Map",
     "MinHeap",
-  ],
+  ] as const,
 };
