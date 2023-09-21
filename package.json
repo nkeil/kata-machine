@@ -16,7 +16,7 @@
     "typescript": "^5.2.2"
   },
   "scripts": {
-    "test": "jest DFSOnBST LRU LinearSearchList BinarySearchList TwoCrystalBalls BubbleSort SinglyLinkedList DoublyLinkedList Queue Stack ArrayList MazeSolver QuickSort BTPreOrder BTInOrder BTPostOrder BTBFS CompareBinaryTrees DFSOnBST DFSGraphList Trie BFSGraphMatrix Map MinHeap",
+    "test": "jest InsertionSort",
     "clear": "bun ./scripts/clear.ts",
     "format": "prettier --write .",
     "generate": "bun ./scripts/generate.ts && prettier .jest.config.json tsconfig.json package.json --write",
