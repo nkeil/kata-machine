@@ -1,36 +1,21 @@
-## Forked from https://github.com/ThePrimeagen/kata-machine
+## Data Structures & Algorithms Practice Tool
 
-### Supported Algorithm
-
-- Insertion sort
-- Merge sort
-- QuickSort
-- Prim's MST (Adjacency List)
-- Dijkstra's Shortest Path (Adjacency List)
-
-### Supported Data Structures
-
-- Singly linked list
-- Doubly linked list
-- Queue
-- Stack
-- Graph with Adjacency List
-- Graph with Adjacency Matrix (untested)
+Forked from https://github.com/ThePrimeagen/kata-machine
 
 ### How It Works
 
-Make sure you have [Node.js](https://nodejs.org/en/) and [bun](https://bun.sh/docs/installation) installed.
+1. Install [Node.js](https://nodejs.org/en/) and [Bun](https://bun.sh/docs/installation).
 
-clone the repo and install the dependencies
+2. Clone the repo and install the dependencies
 
 ```bash
 bun install
 ```
 
-edit the `ligma.config.js` file
+3. Edit the `ligma.config.js` file to contain only the katas you want to practice for the current day.
 
-```javascript
-module.exports = {
+```typescript
+export default {
   dsa: [
     "InsertionSort",
     "MergeSort",
@@ -39,17 +24,17 @@ module.exports = {
     "QuickSort",
     "DijkstraList",
     "PrimsList",
-  ],
+  ] as const,
 };
 ```
 
-create a day of katas, this will use the list in the `ligma.config.js`.
+3. Create a day of katas from the list in `ligma.config.js`.
 
 ```bash
 bun generate
 ```
 
-this will progressively create folders named
+This will progressively create folders named
 
 ```
 src/day1
@@ -63,6 +48,14 @@ for testing each day.
 
 #### Testing
 
+Run all tests for the current day:
+
+```bash
+bun run test
 ```
-bun test
+
+Run only specific tests for the current day:
+
+```bash
+bun jest [test-name-partial]
 ```
