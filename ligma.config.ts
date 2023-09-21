@@ -1,6 +1,7 @@
 export default {
   dsa: [
     "InsertionSort",
+    "MergeSort",
     // "DFSOnBST",
     // "LRU",
     // "LinearSearchList",
