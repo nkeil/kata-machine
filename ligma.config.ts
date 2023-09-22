@@ -2,6 +2,7 @@ export default {
   dsa: [
     "InsertionSort",
     "MergeSort",
+    "MaximumSubarray",
     // "DFSOnBST",
     // "LRU",
     // "LinearSearchList",
