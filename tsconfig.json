@@ -11,7 +11,7 @@
     "module": "commonjs",
     "baseUrl": "src",
     "paths": {
-      "@code/*": ["day3/*"]
+      "@code/*": ["day4/*"]
     },
     "types": ["bun-types"]
   },
