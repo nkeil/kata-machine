@@ -20,6 +20,7 @@
     "clear": "bun ./scripts/clear.ts",
     "format": "prettier --write .",
     "generate": "bun ./scripts/generate.ts && prettier .jest.config.json tsconfig.json package.json --write",
+    "append": "bun ./scripts/append.ts",
     "day": "echo ./src/day4",
     "type-check": "tsc --noEmit"
   }

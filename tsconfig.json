@@ -1,19 +1,31 @@
 {
   "compilerOptions": {
-    "outDir": "dist",
-    "allowJs": true,
-    "noImplicitAny": true,
-    "strictNullChecks": true,
+    "types": ["bun-types"],
+
+    "lib": ["ESNext"],
+    "module": "esnext",
+    "target": "esnext",
+
+    // if TS 5.x+
+    "moduleResolution": "bundler",
+    "noEmit": true,
+    "allowImportingTsExtensions": true,
+    "moduleDetection": "force",
+
+    // support JSX
+    "jsx": "react-jsx",
+
+    // best practices
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+
     "resolveJsonModule": true,
     "noImplicitReturns": true,
-    "esModuleInterop": true,
-    "target": "esnext",
-    "module": "commonjs",
     "baseUrl": "src",
     "paths": {
       "@code/*": ["day4/*"]
-    },
-    "types": ["bun-types"]
+    }
   },
   "include": ["./src/**/*", "./scripts/*"],
   "exclude": ["node_modules"]
