@@ -7,14 +7,14 @@ export default class MinHeap {
     this.data = [];
   }
 
-  insert(value: number): void {
-    this.data[this.length] = value;
-    this.heapifyUp(this.length);
-    this.length++;
+  // O(1)
+  peek(): number | undefined {
+    return this.data[0];
   }
 
-  delete(): number {
-    if (this.length === 0) return -1;
+  // O(logN)
+  pop(): number | undefined {
+    if (this.length === 0) return undefined;
 
     const out = this.data[0];
 
@@ -25,6 +25,13 @@ export default class MinHeap {
     this.heapifyDown(0);
 
     return out;
+  }
+
+  // O(logN)
+  insert(value: number): void {
+    this.data[this.length] = value;
+    this.heapifyUp(this.length);
+    this.length++;
   }
 
   private heapifyUp(idx: number): void {

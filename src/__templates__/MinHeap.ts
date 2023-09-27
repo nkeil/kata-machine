@@ -10,7 +10,7 @@ export default class MinHeap {
     // TODO: implement
   }
 
-  delete(): number {
+  pop(): number {
     // TODO: implement
     return -1;
   }
