@@ -3,6 +3,8 @@ export default {
     "InsertionSort",
     "MergeSort",
     "MaximumSubarray",
+    "MinHeap",
+    "HeapSort",
     // "DFSOnBST",
     // "LRU",
     // "LinearSearchList",
@@ -26,6 +28,5 @@ export default {
     // "Trie",
     // "BFSGraphMatrix",
     // "Map",
-    // "MinHeap",
   ] as const,
 };

@@ -16,7 +16,7 @@
     "typescript": "^5.2.2"
   },
   "scripts": {
-    "test": "jest InsertionSort MergeSort MaximumSubarray",
+    "test": "jest InsertionSort MergeSort MaximumSubarray MinHeap HeapSort",
     "clear": "bun ./scripts/clear.ts",
     "format": "prettier --write .",
     "generate": "bun ./scripts/generate.ts && prettier .jest.config.json tsconfig.json package.json --write",
