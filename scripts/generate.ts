@@ -1,24 +1,21 @@
 import * as fs from "fs";
 import config from "../ligma.config";
 import * as align from "./align-configs";
+import { createAlgorithm, getCurrentDayFolder } from "./helpers";
 
-const dayFolders = fs
-  .readdirSync("./src")
-  .filter((i) => i.includes("day"))
-  .sort((a, b) => +b.substring(3) - +a.substring(3));
-const day = dayFolders.length === 0 ? 1 : +dayFolders[0].substring(3) + 1;
+const currentDayFolder = getCurrentDayFolder();
+const newDay = currentDayFolder ? +currentDayFolder.substring(3) + 1 : 1;
+const newDayFolder = `day${newDay}`;
+fs.mkdirSync(`./src/${newDayFolder}`);
 
-const dayName = `day${day}`;
-const dayPath = `./src/${dayName}`;
-fs.mkdirSync(dayPath);
+for (const configAlgo of config.dsa) {
+  await createAlgorithm(configAlgo, newDayFolder);
+  const input = Bun.file(`./src/__templates__/${configAlgo}.ts`);
+  const output = Bun.file(`./src/${newDayFolder}/${configAlgo}.ts`);
+  await Bun.write(output, input);
+}
 
-config.dsa.forEach((ds) => {
-  const input = Bun.file(`./src/__templates__/${ds}.ts`);
-  const output = Bun.file(`${dayPath}/${ds}.ts`);
-  Bun.write(output, input);
-});
-
-align.jest(dayName);
-align.tsconfig(dayName);
-align.packageJson(config.dsa, dayPath);
+align.jest(newDayFolder);
+align.tsconfig(newDayFolder);
+align.packageJson(config.dsa, `./src/${newDayFolder}`);
 align.stats(config.dsa);
