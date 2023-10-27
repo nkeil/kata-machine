@@ -1,11 +1,12 @@
 export default {
   dsa: [
-    "InsertionSort",
-    "MergeSort",
-    "MaximumSubarray",
-    "MinHeap",
-    "HeapSort",
-    "QuickSort",
+    // "InsertionSort",
+    // "MergeSort",
+    // "MaximumSubarray",
+    // "MinHeap",
+    // "HeapSort",
+    // "QuickSort",
+
     // "Trie",
     // "DFSOnBST",
     // "LRU",

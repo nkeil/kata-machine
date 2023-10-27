@@ -17,7 +17,7 @@
     "esModuleInterop": true,
     "baseUrl": "src",
     "paths": {
-      "@code/*": ["day4/*"]
+      "@code/*": ["day5/*"]
     }
   },
   "include": ["./src/**/*", "./scripts/*"],

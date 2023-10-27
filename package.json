@@ -16,12 +16,12 @@
     "typescript": "^5.2.2"
   },
   "scripts": {
-    "test": "jest MergeSort MaximumSubarray HeapSort MinHeap QuickSort InsertionSort",
+    "test": "jest bucketSort HeapSort MinHeap QuickSort countingSort radixSort",
     "clear": "bun ./scripts/clear.ts",
     "format": "prettier --write .",
     "generate": "bun ./scripts/generate.ts && prettier .jest.config.json tsconfig.json package.json --write",
     "amend": "bun ./scripts/amend.ts",
-    "day": "echo ./src/day4",
+    "day": "echo ./src/day5",
     "type-check": "tsc --noEmit"
   }
 }
